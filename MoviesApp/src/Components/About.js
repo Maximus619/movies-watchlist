@@ -33,7 +33,8 @@ export default function About() {
           Wondering How This Is Made ? Checkout The Code Here <hr />
         </h4>
         <p className="shadow1">
-          The code is present at : <a href='https://github.com/' target='_blank' rel="noreferrer" > <img src="	https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github Badge" style={{ borderRadius: '17px' }} /> </a>
+          The code is present at : <a href='https://github.com/Maximus619/movies-watchlist
+          ' target='_blank' rel="noreferrer" > <img src="	https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github Badge" style={{ borderRadius: '17px' }} /> </a>
           <br /> If you have any feedback/Improvement or want to contribute, Raise an Issue in Github.
         </p>
         <h4 className="shadow1">

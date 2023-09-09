@@ -29,13 +29,13 @@ const Navbar = () => {
         setAnchorElNav(null);
     };
 
-    const navbarredirect = (des) =>{
+    const navbarredirect = (des) => {
         handleCloseNavMenu();
         navigate(`/${des}`)
 
     }
-    const gotogithub = ()=>{
-        let win = window.open("https://github.com/sankalp-srivastava/movies-watchlist")
+    const gotogithub = () => {
+        let win = window.open("https://github.com/Maximus619/movies-watchlist")
         win.focus();
     }
 
@@ -49,7 +49,7 @@ const Navbar = () => {
                         noWrap
                         component="div"
                         sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, cursor: 'pointer' }}
-                        onClick={()=>navigate('/')}
+                        onClick={() => navigate('/')}
                     >
                         Movies Watchlist App
                     </Typography>
@@ -83,16 +83,16 @@ const Navbar = () => {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            <MenuItem onClick={()=>navbarredirect('')}>
+                            <MenuItem onClick={() => navbarredirect('')}>
                                 <Typography textAlign="center">Home</Typography>
                             </MenuItem>
-                            <MenuItem onClick={()=>navbarredirect('favorites')}>
+                            <MenuItem onClick={() => navbarredirect('favorites')}>
                                 <Typography textAlign="center">My Watch List</Typography>
                             </MenuItem>
-                            <MenuItem onClick={()=>navbarredirect('search')}>
+                            <MenuItem onClick={() => navbarredirect('search')}>
                                 <Typography textAlign="center">Search</Typography>
                             </MenuItem>
-                            <MenuItem onClick={()=>navbarredirect('about')}>
+                            <MenuItem onClick={() => navbarredirect('about')}>
                                 <Typography textAlign="center">About</Typography>
                             </MenuItem>
                             <MenuItem onClick={gotogithub}>
@@ -105,42 +105,42 @@ const Navbar = () => {
                         noWrap
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, cursor: 'pointer' }}
-                        onClick={()=>navigate('/')}
+                        onClick={() => navigate('/')}
                     >
                         Movies Watchlist App
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } ,justifyContent:'flex-end',marginRight:'1rem'}}>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', marginRight: '1rem' }}>
                         <Button
-                            onClick={()=>navbarredirect('')}
+                            onClick={() => navbarredirect('')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
-                            <HomeIcon/>
+                            <HomeIcon />
                         </Button>
                         <Button
-                            onClick={()=>navbarredirect('favorites')}
+                            onClick={() => navbarredirect('favorites')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
-                            <FavoriteIcon/>
+                            <FavoriteIcon />
                         </Button>
 
                         <Button
-                            onClick={()=>navbarredirect('search')}
+                            onClick={() => navbarredirect('search')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
-                            <SearchIcon/>
+                            <SearchIcon />
                         </Button>
 
                         <Button
                             onClick={gotogithub}
                             sx={{ my: 2, color: 'white', display: 'block' }}
-                        ><GitHubIcon/>
-                            
+                        ><GitHubIcon />
+
                         </Button>
                         <Button
-                            onClick={()=>navbarredirect('about')}
+                            onClick={() => navbarredirect('about')}
                             sx={{ my: 2, color: 'white', display: 'block' }}
-                        ><InfoIcon/>
-                            
+                        ><InfoIcon />
+
                         </Button>
 
                     </Box>

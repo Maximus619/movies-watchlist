@@ -15,7 +15,6 @@ export default function Banner() {
     }
 
     useEffect(() => {
-        console.log(process.env.REACT_APP_API_KEY);
         const res = axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}`).then((res) => {
             let data = [...res.data.results].slice(0, 6);
             setMovie(data)
