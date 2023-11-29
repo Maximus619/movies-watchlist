@@ -10,3 +10,5 @@ A React App which shows trending movies and Tv show and information related to t
 -  Axois etc.
 
 
+https://movieswatchpoint.netlify.app
+
